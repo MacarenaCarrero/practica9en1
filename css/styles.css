@@ -2,7 +2,7 @@ body {
   background-color: black;
 }
 
-.boxes {
+.box {
   position: relative;
   width: 100px;
   height: 100px;
@@ -11,7 +11,8 @@ body {
   box-shadow: 300px 150px purple, 150px 300px white;
 }
 
-.boxes::after {
+.box::after,
+.box::before {
   content: "";
   position: absolute;
   width: 100px;
@@ -20,11 +21,7 @@ body {
   left: 150px;
   box-shadow: -150px 150px green, 150px 300px blue;
 }
-.boxes::before {
-  content: "";
-  position: absolute;
-  width: 100px;
-  height: 100px;
+.box::before {
   background-color: mediumslateblue;
   left: 300px;
   border-radius: 25px;
