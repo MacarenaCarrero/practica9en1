@@ -1,0 +1,32 @@
+body {
+  background-color: black;
+}
+
+.boxes {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  border-radius: 50px;
+  box-shadow: 300px 150px purple, 150px 300px white;
+}
+
+.boxes::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  left: 150px;
+  box-shadow: -150px 150px green, 150px 300px blue;
+}
+.boxes::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: mediumslateblue;
+  left: 300px;
+  border-radius: 25px;
+  box-shadow: -150px 150px rgb(116, 247, 116), -300px 300px rgb(219, 114, 132);
+}
